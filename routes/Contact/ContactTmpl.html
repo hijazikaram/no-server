@@ -3,6 +3,24 @@
   <div class="col-1-1">
     <h1 class="heading">Contact</h2><hr>
 
+      <div class="quote-form">
+				<form ng-controller="emailCtrl">
+					<p class="p-tag">Name:</p>
+					<input  class="intput-box"type="text" name="name" required placeholder="Name - Company" ng-model="name">
+					<p class="p-tag">E-mail:</p>
+					<input class="intput-box"type="email" name="email" required placeholder="Email" ng-model="email">
+					<p class="p-tag">Message:</p>
+					<textarea class="intput-box"type="text" required placeholder="How may we help you?" ng-model="message"></textarea>
+					<br>
+					<button class="btn btn-secondary"type="button" name="button" ng-click="sendEmail(name, email, message)">Send</button>
+					<email-dir responseMessage="responseMessage"></email-dir>
+				</form>
+			</div>
+		</div>
+      <!-- Email: <input type="text" class="form-control" placeholder="Email">
+      <br>
+      Message: <input type="text" class="form-control" placeholder="Message"> -->
+
     <div class="social">
       <a class="a-tag-logo" href="mailto:hijazikaram@gmail.com" title="hijazikaram@gmail.com">
         <img src="images/email.png" alt="Email" />
@@ -19,7 +37,7 @@
       </a>
       <a class="a-tag-logo" href="http://linkedin.com/in/karamhijazi" title="linkedin.com/in/karamhijazi" style="font-weight:20px;">
         <img src="images/linkedin.png" alt="Linkedin"/>
-        <div class="social-text">linkedin.com<wbr>karamhijazi</div>
+        <div class="social-text">linkedin.com<wbr>/karamhijazi</div>
       </a>
     </div>
   </div>

@@ -33,6 +33,16 @@ body {
 		100%{background-position:0% 50%}
 	}
 
+
+/*.nav {
+  position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}*/
+
 .name {
   height: 100%;
   text-align: center;
@@ -91,7 +101,7 @@ td{
 .heading{
   text-align: center;
   color: white;
-  padding-top: 15%;
+  padding-top: 10%;
 
 }
 #contact{
@@ -126,7 +136,19 @@ hr{
 #hr-line{
   width: 38%;
 }
-
+.btn{
+  margin-right: 20%;
+}
+.p-tag{
+  color: white;
+}
+.intput-box{
+  width: 30%;
+}
+.btn{
+  background-color: white;
+  margin-left: 20%;
+}
 [ui-view].ng-enter, [ui-view].ng-leave {
   position: absolute;
   left: 0;
@@ -138,7 +160,7 @@ hr{
 }
 
 [ui-view].ng-enter {
-  opacity: 0;
+  opacity: 1;
   -webkit-transform:scale3d(0.5, 0.5, 0.5);
   -moz-transform:scale3d(0.5, 0.5, 0.5);
   transform:scale3d(0.5, 0.5, 0.5);
@@ -164,6 +186,29 @@ hr{
   -moz-transform:translate3d(100px, 0, 0);
   transform:translate3d(100px, 0, 0);
 }
+#snake-tag{
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+#hr{
+  width:20%;
+}
+#canvas{
+    padding: 0;
+    margin: auto;
+    display: block;
+    background-color: black;
+    margin-top: 100px;
+  }
+  .form-control{
+    width: 60%;
+    text-align: center;
+    margin-left: 10%;
+  }
+  label{
+    color: white;
+  }
 /*[ui-view].ng-enter, [ui-view].ng-leave {
   position: absolute;
   left: 0;

@@ -16,6 +16,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     // controller: 'ContactCtrl',
     url: '/Contact '
   })
+  // .state('snakeGame', {
+  //   templateUrl: '/routes/snakeGame/snakeTmpl.html',
+  //   // controller: 'mainCtrl',
+  //   url: '/snakeGame'
+  // })
 
     $urlRouterProvider.otherwise('/Home');
 
